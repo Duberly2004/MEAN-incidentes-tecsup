@@ -1,0 +1,50 @@
+
+<div class="container mt-5">
+    <div class="card shadow-lg py-4 col-12 col-md-10 col-lg-7 mx-auto mb-5 text-start d-flex align-items-center justify-content-center">
+    <form>
+      <label class="mb-1" for="asunto">Asunto</label>
+      <input class="form-control" type="text" id="asunto" placeholder="Ingresa el asunto..." required autofocus>
+  
+      <label class="mb-1 mt-4" for="categories">Categorías</label>
+      <select id="categories" class="form-select" required>
+        <option value="" disabled selected>Seleccione...</option>
+        <option value="mantenimiento">Mantenimiento</option>
+        <option value="seguridad">Seguridad</option>
+        <option value="medio_ambiente">Medio ambiente</option>
+      </select>
+  
+      <label class="mb-1 mt-4" for="description">Describe qué ha ocurrido y cómo ha ocurrido</label>
+      <textarea id="description" class="form-control" placeholder="Describe tu texto aquí..." required></textarea>
+  
+      <label class="mb-1 mt-4" for="attachment">Archivo adjunto:</label>
+      <div class="file-upload form-control py-5 text-center">
+        <label for="file-upload">Arrastra y suelta archivos, pega captura de pantalla o busca</label><br>
+        <input class="input-form p-2 rounded border" type="file" id="file-upload" style="display: none;">
+        <button class="btn btn-secondary px-5 mt-3" type="button1" onclick="document.getElementById('file-upload').click()">Subir</button>
+      </div>
+  
+      <label class="mb-1 mt-4" for="urgency">¿Con qué urgencia hay que arreglar el problema?</label>
+      <select id="urgency" class="form-select" required>
+        <option value="" disabled selected>Seleccione...</option>
+        <option value="critico">Crítico</option>
+        <option value="alto">Alto</option>
+        <option value="medio">Medio</option>
+        <option value="bajo">Bajo</option>
+      </select>
+  
+      <label class="mb-1 mt-4" for="impact">¿En qué medida te afecta el problema a ti o a los demás?</label>
+      <select id="impact" class="form-select" required>
+        <option value="" disabled selected>Seleccione...</option>
+        <option value="extenso">Extenso / generalizado</option>
+        <option value="significativo">Significativo / grande</option>
+        <option value="moderado">Moderado / limitado</option>
+        <option value="menor">Menor / localizado</option>
+      </select>
+  
+      <div class="mt-4">
+        <button class="btn btn-blue-success text-white border-0" type="submit">Registrar</button>
+        <button class="btn btn-blue-success text-white border-0 mx-2" type="button">Regresar</button>
+      </div>
+    </form>
+</div>
+</div>

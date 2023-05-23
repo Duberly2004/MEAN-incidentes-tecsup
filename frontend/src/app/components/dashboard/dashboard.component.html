@@ -1,0 +1,48 @@
+<style>
+    .section{
+      height:100vh ;
+      background-image: url('../../../assets/images/fondo2-tecsup.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:top center;
+      font-family: 'Poppins', sans-serif;
+      background-size: 200vh;
+      background-size: 100vw;
+    }
+    @media(max-width: 1100px){
+    .section{
+        background-position:top left;
+        background-size: 220vh;
+      }
+    }
+  </style>
+<section class="section pt-5">
+    <div class="container">
+        <div class="card shadow-lg px-5 py-4 col-12 col-md-10 col-lg-9 mx-auto mb-5 text-start d-flex align-items-center justify-content-center">
+            <div>
+
+                <div>
+                    <a href="" class="text-decoration-none">Centro de ayuda de Tecsup</a>
+                    <h4 class="pb-1 pt-4">¡BIENVENIDO DUBERLY!</h4>
+                    <p class="pb-3">Mediante este sitio buscamos mejorar la experiencia, bienestar y seguridad tanto de estudiantes, como del personal dentro del campus. El programa busca prevenir incidentes y, si ocurren, abordarlos de manera oportuna y eficaz para erradicar cualquier daño o consecuencias negativas.</p>
+                    <p class="mb-4"><i class='bx bx-paper-plane'></i><span class="mx-3">Contacta con nosotros sobre</span></p>
+                </div>
+                
+                <!-- ---------------MANTENIMIENTO--------------- -->            
+                <app-mantenimiento title="Mantenimiento" id="1" description="Esta categoría se eca en incidentes relacionados con el mantenimiento de las máquinas y equipos en la institución,  entre otros."></app-mantenimiento>
+
+                <!-- ---------------SEGURIDAD--------------- -->            
+                <app-mantenimiento title="Seguridad" id="1" description="En esta categoría se podrían reportar incidentes relacionados con la seguridad de la institución y sus alrededores, cyeomo robos, asaltos, vandalismo, situaciones de riesgntre otros."></app-mantenimiento>
+
+                <!-- ---------------MEDIO AMBIENTE--------------- -->            
+                <app-mantenimiento title="Medio ambiente" id="1" description="Se pueden reportar incidentes que afecten al medio ambiente, como derrames de químicos, contaminación del aire, del agua, ruido excesivo, entre otros."></app-mantenimiento>
+
+                <!-- ---------------TRNASPORTE--------------- -->            
+                <app-mantenimiento title="Transporte" id="1" description="En esta categoría se podrían reportar incidentes relacionados con la gestión administrativa de la institución, como errores en la matrícula, problemas con la facturación, entre otros."></app-mantenimiento>
+
+                <!-- ---------------OTROS--------------- -->            
+                <app-mantenimiento title="Otros" id="1" description="En esta categoría se podrían reportar incidentes  que no esten relacionados con ninguna de las anteriores categorias."></app-mantenimiento>
+        </div>
+    </div>
+    </div>
+</section>

@@ -1,0 +1,14 @@
+.bx{
+    font-size: 2rem;
+}
+
+.hover-effect {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.26);
+}
